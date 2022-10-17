@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dildeep Gill</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ac14fc81f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+<script type="text/javascript">
+   (function(){
+      emailjs.init("BXG7G7ynHt0ghIQFn");
+   })();
+</script>
+
+</head>
+<body>
+    <header class="main-page" onmousemove="moveBackground(event)">
+        <nav class="wrapper">
+            <figure>
+                <!-- <img class="logo" src="./assets/logo4.PNG" alt="my inital logo">                 -->
+                <div class="logo">&lt;Dil/&gt</div>
+        </figure>
+            <ul class="links-container">
+                <li onclick="toggle()" class="links">
+                    <a href="#" class="nav-link nav-hover gone link-hover">About Me</a>
+                </li>
+                <li class="links">
+                    <a href="#" class="nav-link nav-hover link-hover">Projects</a>
+                </li>
+                <li onclick="toggle()" class="links">
+                    <a href="#" class="nav-link nav-hover link-hover">Contact</a>
+                </li>
+                <li class="links">
+                    <a href="#" class="nav-link nav-hover gone link-hover">Resume</a>
+                </li>
+                <li class="links" onclick="contrast()">
+                    <a href="#" class="nav-link nav-hover link-hover">
+                        <i class="fa-solid fa-moon bigger"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="heading-background">
+            <div class="heading-container">
+                <div>
+                    <h1>Hi, my <br> name is<b class="purple"> Dil.</b></h1>
+                    <p><b>Front-end web developer.</b></p>
+                    <div class="social-container">
+                        <a href="#" target="_blank" class="font-links ">
+                            <i class="fa-brands fa-github bigger"></i>
+                        </a>
+                        <a href="#" target="_blank" class="font-links ">
+                            <i class="fa-brands fa-linkedin-in bigger"></i>
+                        </a>
+                        <a href="#" target="_blank" class="font-links ">
+                            <i class="fa-solid fa-file bigger"></i>
+                        </a>
+                       
+                        <h3 class="cursor">More <span class="purple" onclick="toggle()">about me</span></h3>
+                    </div>
+                </div>
+            <div class="moving-images">    
+              <img src="./assets/flomar-Football-soccer.png" class="shape shape0" style="width: 30px"alt="">            
+              <i class="fa-sharp fa-solid fa-code grey shape shape1"></i> 
+              <img src="./assets/luffy.png" class="shape shape2" style="width: 40px"alt="">  
+              <i class="fa-sharp fa-solid fa-code  grey shape shape3"></i> 
+              <img src="./assets/btc.png" class="shape shape4" style="width: 45px"alt="">   
+              <i class="fa-sharp fa-solid fa-code  grey shape shape5"></i> 
+              <img src="./assets/pizza2.png" class="shape shape6" style="width: 40px"alt="">  
+              <i class="fa-sharp fa-solid fa-code grey shape shape7"></i> 
+              <img src="./assets/league.png" class="shape shape8" style="width: 30px"alt="">   
+               
+            </div>
+       </div>
+       
+       <div class="modal">
+            <div class="modal-one about-modal">
+                <div class="modal-container">             
+                    <h3 class="about-me" >About me</h3>
+                    <p>I am a Front-end Developer</p>
+                    <p class="modal-title">who loves to play league of legends, watch anime, play soccer and code until 3am.</p>
+                    
+                    <ul class="modal-images">
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                            <span class="language">React</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <span class="language">Javascript</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <span class="language">Css</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            <span class="language">Html</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /> 
+                            <span class="language">Git</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                            <span class="language">FireBase</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                            <span class="language">Sass</span>
+                        </li>
+                        <li class="skills">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+                            <span class="language">JQuery</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-one contact-modal">
+                  <i onclick="toggle()" class="fas fa-times close bigger"></i>              
+
+                <div class="modal-container">
+                <h3 class="modal-title modal-title-contact">
+                    Love to hear from you
+                </h3>
+                
+                <form id="contact-form" onsubmit="contact(event)">
+                <div class="fields">
+                    <label class="form-name" for="name">Name</label>
+                    <input type="text" name="user-name" required >
+                </div>
+                <div class="fields">
+                    <label class="form-name" for="email">Email</label>
+                    <input type="email" name="user-email" required>
+                </div>
+                <div class="fields">
+                    <label class="form-name" for="message">Message</label>
+                    <textarea type="input" name="message" required ></textarea>
+                </div>
+                <button id=contact-submit class="form-submit">Send </button>
+                </form>
+            </div>
+            <div class="modal-loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal-sent">
+                Thanks message has been sent! Will reach out soon. 
+            </div>
+            </div>
+           
+        </div>
+       
+            <!-- <img src="./assets/ball.png" class="shape shape0" style="width: 28px"alt="">  
+            <img src="./assets/msn.png" class="shape shape1" style="width: 40px"alt="">  
+            <img src="./assets/luffy.png" class="shape shape2" style="width: 35px"alt="">  
+            <img src="./assets/vegeta2.png" class="shape shape3" style="width: 30px"alt="">     
+            <img src="./assets/bakugo.png" class="shape shape4" style="width: 60px"alt="">   
+            <img src="./assets/naruto.png" class="shape shape5" style="width: 45px"alt="">  
+            <img src="./assets/btc.png" class="shape shape6" style="width: 45px"alt=""> 
+            <img src="./assets/iced-capp-product.png" class="shape shape7" style="width: 35px"alt="">  
+            <img src="./assets/redrose.png" class="shape shape9" style="width: 35px"alt="">
+            <img src="./assets/travel.png" class="shape shape10" style="width: 45px"alt="">  
+            <img src="./assets/league.png" class="shape shape11" style="width: 38px"alt=""> 
+            <img src="./assets/eminem.png" class="shape shape12" style="width: 40px"alt="">
+            <img src="./assets/LimeWire.png" class="shape shape13" style="width: 35px"alt="">        
+             --> 
+        
+    </header>
+    <a href="#">
+        <button class="contactme" onclick="toggle()">
+            <i class="fas fa-envelope bigger"></i>
+        </button>
+    </a>
+        <section class="all-projects">
+            <div class="container">
+                <h2 class="project-title">My <b class="purple">Projects</b></h2>
+               <ul class="list-myprojects">
+                <div class="row1">
+                    <li class="project">
+                    <div class="project-wrapper">
+                        <img src="./assets/project 1 screenshot.PNG" class="project-image" alt="">  
+                        <div class="project-background"></div>               
+                        <div class="description">
+                                <h3 class="description-title">
+                                    BeachStays <br> Html, CSS
+                                </h3>
+                                <div class="about-project">
+                                    A conversion of a PSD design into a multi-page and responsive website, following a provided style guide and file-naming conventions.                                </div>
+                                <div class="live-links">
+                                    <a href="" class="first-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="first-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                        </div>
+                    </div> 
+                    </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-wrapper">
+                            <img src="./assets/hiremeAll.PNG" class="project-image" alt="">  
+                            <div class="project-background"></div>               
+                            <div class="description">
+                                    <h3 class="description-title">
+                                       Hire Me Coin <br> Html, CSS, Javascript, SASS, REST API
+                                    </h3>
+                                    <div class="about-project">
+                                     A pair-programmed application that allows users to search for the top 20 cryptocurrencies while displaying price chart.                                             
+                                    </div>        
+                                    <div class="live-links">
+                                        <a href="" class="first-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="" class="first-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                            </div>       
+                        </div>
+                    </li>
+                </div>
+                <div class="row2">
+                    <li class="project">
+                        <div class="project-wrapper">
+                        <img src="./assets/project 1 screenshot.PNG" class="project-image" alt="">  
+                        <div class="project-background"></div>               
+                        <div class="description">
+                                <h3 class="description-title">
+                                    BeachStays <br> Html, CSS
+                                </h3>
+                                <div class="about-project">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum distinctio saepe? Aliquid at beatae asperiores fugit, minima assumenda omnis?
+                                </div>
+                                <div class="live-links">
+                                    <a href="" class="first-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="" class="first-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-wrapper">
+                            <img src="./assets/project 1 screenshot.PNG" class="project-image" alt="">  
+                            <div class="project-background"></div>               
+                            <div class="description">
+                                    <h3 class="description-title">
+                                        BeachStays <br> Html, CSS
+                                    </h3>
+                                    <div class="about-project">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum distinctio saepe? Aliquid at beatae asperiores fugit, minima assumenda omnis?
+                                    </div>
+                                    <div class="live-links">
+                                        <a href="" class="first-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="" class="first-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>   
+                            </div>                     
+                    </li>
+                </div>
+               </ul>
+            </div>
+            
+            <footer class="container">
+                <ul class="footer-links">
+                    <li ><a href="#"onclick="toggle()">Contact</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Resume</a></li>
+                </ul>
+                © Dildeep Gill 2022
+            </footer>
+            
+            
+        </section>
+    <script src="app.js"></script>
+</body>
+</html>
