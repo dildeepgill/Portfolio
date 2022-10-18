@@ -272,9 +272,9 @@ a:hover {
 header {
   position: relative;
 }
-.main-page {
+/* .main-page {
   min-height: 100vh;
-}
+} */
 .cursor {
   cursor: pointer;
   padding-top: 25px;
