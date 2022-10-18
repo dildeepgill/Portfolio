@@ -282,10 +282,6 @@ header {
 }
 
 .heading-container {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   width: 80%;
   max-width: 1300px;
   margin: 0 auto;
@@ -794,6 +790,11 @@ html {
   .row1,
   .row2 {
     flex-direction: column;
+  }
+}
+@media (max-width: 1361px) {
+  .moving-images {
+    margin-top: 35px;
   }
 }
 
