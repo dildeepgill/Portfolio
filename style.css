@@ -288,6 +288,16 @@ header {
   transform: translateX(-50%);
   animation: down 2s ease-in-out infinite;
 }
+
+.up {
+  transform: translateY(-1);
+  position: absolute;
+  left: 50%;
+  bottom: 80% !important;
+  transform: translateX(-50%);
+
+  transform: scaleY(-1);
+}
 @keyframes down {
   0% {
     bottom: 10px;
@@ -488,6 +498,7 @@ button {
 footer {
   text-align: center;
   width: 100%;
+  position: relative;
 }
 
 .footer-links {
