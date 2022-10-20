@@ -556,7 +556,7 @@ footer {
 }
 
 .modal-container {
-  padding: 25px 85px;
+  padding: 25px 50px;
 }
 .fields {
   padding-top: 30px;
@@ -572,18 +572,22 @@ img {
 }
 
 .skills {
-  width: 23%;
+  width: 21%;
   position: relative;
   padding: 20px 3px 3px 3px;
   display: flex;
   justify-content: center;
   transition: all 1s ease;
 }
+.para-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
 .modal-images {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
