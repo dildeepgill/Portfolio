@@ -238,7 +238,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 110px;
+  height: 85px;
 }
 
 .links-container {
@@ -580,8 +580,13 @@ img {
   transition: all 1s ease;
 }
 .para-wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.para-wrapper p {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .modal-images {
@@ -600,10 +605,10 @@ img {
 }
 
 .language {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 800;
   position: absolute;
-  bottom: -11px;
+  bottom: -18px;
   transform: scale(0);
   transition: all 500ms ease;
 }
@@ -716,6 +721,18 @@ label {
   }
 }
 
+@keyframes down1 {
+  0% {
+    bottom: 8px;
+  }
+  50% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
 .close {
   position: absolute;
   top: 35px;
@@ -744,11 +761,11 @@ body {
 
 .shape0 {
   top: 10%;
-  left: 10%;
+  left: 17%;
 }
 .shape1 {
   top: 10%;
-  left: 50%;
+  left: 53%;
 }
 .shape2 {
   top: 10%;
@@ -756,11 +773,11 @@ body {
 }
 .shape3 {
   top: 40%;
-  left: 10%;
+  left: 17%;
 }
 .shape4 {
   top: 40%;
-  left: 50%;
+  left: 53%;
 }
 .shape5 {
   top: 40%;
@@ -768,11 +785,11 @@ body {
 }
 .shape6 {
   top: 80%;
-  left: 10%;
+  left: 17%;
 }
 .shape7 {
   top: 80%;
-  left: 50%;
+  left: 53%;
 }
 .shape8 {
   top: 80%;
@@ -815,10 +832,29 @@ body {
   .row2 {
     flex-direction: column;
   }
+  .modal-images {
+    width: 70%;
+  }
+  .para-wrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
 @media (max-width: 1361px) {
   .moving-images {
     margin-top: 35px;
+  }
+  .para-wrapper p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .para-wrapper {
+    width: 90%;
+  }
+  .para-wrapper p {
+    font-size: 15px;
   }
 }
 
@@ -834,39 +870,44 @@ body {
   }
   .shape0 {
     top: 10%;
-    left: 10%;
+    left: 7%;
   }
   .shape1 {
-    top: 10%;
-    left: 20%;
+    top: 0%;
+    left: 17%;
   }
   .shape2 {
     top: 10%;
-    left: 30%;
+    left: 27%;
   }
   .shape3 {
-    top: 10%;
-    left: 40%;
+    top: 0%;
+    left: 37%;
   }
   .shape4 {
     top: 10%;
-    left: 50%;
+    left: 47%;
   }
   .shape5 {
-    top: 10%;
-    left: 60%;
+    top: 0%;
+    left: 57%;
   }
   .shape6 {
     top: 10%;
-    left: 70%;
+    left: 67%;
   }
   .shape7 {
-    top: 10%;
-    left: 80%;
+    top: 0%;
+    left: 77%;
   }
   .shape8 {
     top: 10%;
-    left: 90%;
+    left: 87%;
+  }
+  .contactme {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
   }
 }
 
@@ -890,5 +931,8 @@ body {
   }
   .gone {
     display: none;
+  }
+  .fa-angle-down {
+    animation: down1 2s ease-in-out infinite;
   }
 }

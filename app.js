@@ -34,8 +34,8 @@ function toggle(){
 
 function moveBackground(event){
     const shapes = document.querySelectorAll(".shape")
-    const x= event.clientX / 30
-    const y= event.clientY / 30
+    const x= event.clientX / 40
+    const y= event.clientY / 40
 
     for(let i = 0; i<shapes.length; i++ ){
         const isOdd = i %2 !==0;
