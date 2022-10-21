@@ -26,8 +26,9 @@ function contact(event){
 
 function toggle(){
     const modal = document.querySelector('.modal')
-    modal.classList.toggle("open")
     
+    modal.classList.toggle("open")
+   
 }
 
 

@@ -733,19 +733,8 @@ label {
 
 body {
   opacity: 1;
-}
-
-.open body {
-  background-color: rgba(10, 20, 50, 0);
-}
-
-html {
-  opacity: 1;
-}
-
-.modal .open html {
-  opacity: 0;
-  visibility: hidden;
+  visibility: visible;
+  transition: 2s all ease;
 }
 
 .light {
