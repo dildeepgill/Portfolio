@@ -430,7 +430,6 @@ button {
 .project-wrapper {
   border-radius: 30px;
   box-shadow: 0 20px 75px 0 black;
-
   position: relative;
   overflow: hidden;
 }
@@ -484,7 +483,7 @@ button {
 }
 
 .project-wrapper:hover .project-background {
-  opacity: 0.8;
+  opacity: 0.7;
   visibility: visible;
 }
 
@@ -495,7 +494,7 @@ button {
 }
 
 .row1 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -752,9 +751,9 @@ label {
 }
 
 body {
-  opacity: 1;
+  /* opacity: 1;
   visibility: visible;
-  transition: 2s all ease;
+  transition: 2s all ease; */
 }
 
 .light {
