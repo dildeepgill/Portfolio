@@ -23,20 +23,20 @@
     <header class="main-page" onmousemove="moveBackground(event)">
         <nav class="wrapper">
             <figure>
-                <a href="/"><div class="logo">&lt;Dil/&gt</div></a>
+                <a href="/"><div class="logo"aria-label="logo" >&lt;Dil/&gt</div></a>
         </figure>
             <ul class="links-container">
                 <li onclick="toggle()" class="links">
-                    <a href="#" class="nav-link nav-hover gone link-hover">About Me</a>
+                    <a href="#" class="nav-link nav-hover gone link-hover" aria-label="message">About Me</a>
                 </li>
                 <li class="links">
-                    <a href="#my-projects" class="nav-link nav-hover link-hover">Projects</a>
+                    <a href="#my-projects" class="nav-link nav-hover link-hover" aria-label="projects">Projects</a>
                 </li>
                 <li onclick="toggle()" class="links">
-                    <a href="#" class="nav-link nav-hover link-hover">Contact</a>
+                    <a href="#" class="nav-link nav-hover link-hover" aria-label="message">Contact</a>
                 </li>
                 <li class="links">
-                    <a href="./assets/Dildeeps Resume.pdf" target="_blank" class="nav-link nav-hover gone link-hover">Resume</a>
+                    <a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume" class="nav-link nav-hover gone link-hover">Resume</a>
                 </li>
                 <!-- <li class="links" onclick="contrast()">
                     <a href="#" class="nav-link nav-hover link-hover">
@@ -50,20 +50,20 @@
                     <h1>Hi, my <br> name is<b class="purple"> Dil.</b></h1>
                     <p><b>Front-end web developer.</b></p>
                     <div class="social-container">
-                        <a href="https://github.com/dildeepgill" target="_blank" class="font-links ">
+                        <a href="https://github.com/dildeepgill" aria-label="github" target="_blank" class="font-links ">
                             <i class="fa-brands fa-github bigger"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" target="_blank" class="font-links ">
+                        <a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" aria-label="linkedin" target="_blank" class="font-links ">
                             <i class="fa-brands fa-linkedin-in bigger"></i>
                         </a>
-                        <a href="./assets/Dildeeps Resume.pdf" target="_blank" class="font-links ">
+                        <a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume" class="font-links ">
                             <i class="fa-solid fa-file bigger"></i>
                         </a>
                        
                         <h3 class="cursor">More <span class="purple" onclick="toggle()">about me</span></h3>    
                     </div>
                 </div>
-                <a href="#my-projects">    
+                <a href="#my-projects" aria-label="projects">    
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
             <div class="moving-images">    
@@ -144,7 +144,7 @@
                     <label class="form-name" for="message">Message</label>
                     <textarea type="input" name="message" required ></textarea>
                 </div>
-                <button id=contact-submit class="form-submit">Send </button>
+                <button id=contact-submit aria-label="Send"class="form-submit">Send </button>
                 </form>
             </div>
             <div class="modal-loading">
@@ -158,8 +158,8 @@
         </div>     
     </header>
    
-    <a href="#">
-        <button class="contactme" onclick="toggle()">
+    <a href="#" aria-label="homepage">
+        <button class="contactme" aria-label="message-image" onclick="toggle()">
             <i class="fas fa-envelope bigger"></i>
         </button>
     </a>
@@ -181,10 +181,10 @@
                                     earthquakes on a vector map, assign heroes, and log vacation days to Firebase
                                 </div>                       
                                 <div class="live-links">
-                                    <a href="https://github.com/shaishav007/tremorsV1"  target="_blank" class="first-link">
+                                    <a href="https://github.com/shaishav007/tremorsV1"  aria-label="github" target="_blank" class="first-link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://beamish-stardust-41358a.netlify.app/"  target="_blank" class="first-link">
+                                    <a href="https://beamish-stardust-41358a.netlify.app/" aria-label="livelink" target="_blank" class="first-link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                     
@@ -205,10 +205,10 @@
 
                                     </div>        
                                     <div class="live-links">
-                                        <a href="https://github.com/dildeepgill/Project-3" target="_blank" class="first-link">
+                                        <a href="https://github.com/dildeepgill/Project-3" aria-label="github" target="_blank" class="first-link">
                                             <i class="fab fa-github"></i>
                                         </a>
-                                        <a href="https://dilsgameshop.netlify.app" target="_blank" class="first-link">
+                                        <a href="https://dilsgameshop.netlify.app" target="_blank"  aria-label="live link" class="first-link">
                                             <i class="fas fa-link"></i>
                                         </a>
                                     </div>
@@ -231,10 +231,10 @@
 
                                 </div>
                                 <div class="live-links">
-                                    <a href="https://github.com/kwametsunami/Crypto-App" class="first-link" target="_blank">
+                                    <a href="https://github.com/kwametsunami/Crypto-App" aria-label="github" class="first-link" target="_blank">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="https://hiremecoin.netlify.app/" class="first-link" target="_blank">
+                                    <a href="https://hiremecoin.netlify.app/" aria-label="livelink" class="first-link" target="_blank">
                                         <i class="fas fa-link"></i>
                                     </a>
                                     
@@ -252,10 +252,10 @@
                                         A conversion of a PSD design into a multi-page and responsive website, following a provided style guide and file-naming conventions.
                                     </div>
                                     <div class="live-links">
-                                        <a href="https://github.com/dildeepgill/Project-1" class="first-link" target="_blank">
+                                        <a href="https://github.com/dildeepgill/Project-1" aria-label="github" class="first-link" target="_blank">
                                             <i class="fab fa-github"></i>
                                         </a>
-                                        <a href="https://beachstaysjuno.netlify.app" class="first-link" target="_blank">
+                                        <a href="https://beachstaysjuno.netlify.app" class="first-link" aria-label="livelink" target="_blank">
                                             <i class="fas fa-link"></i>
                                         </a>
                                     </div>   
@@ -271,10 +271,10 @@
                     </a>
                 <ul class="footer-links">
                     
-                    <li ><a href="#"onclick="toggle()">Contact</a></li>
-                    <li><a href="https://github.com/dildeepgill" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" target="_blank">Linkedin</a></li>
-                    <li><a href="./assets/Dildeeps Resume.pdf" target="_blank">Resume</a></li>
+                    <li ><a href="#"onclick="toggle()" aria-label="messageEmail">Contact</a></li>
+                    <li><a href="https://github.com/dildeepgill" aria-label="github" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" aria-label="linkedin" target="_blank">Linkedin</a></li>
+                    <li><a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume">Resume</a></li>
                 </ul>
                 © Dildeep Gill 2022
             </footer>

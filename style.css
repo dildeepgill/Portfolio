@@ -484,20 +484,6 @@ button {
   opacity: 0.8;
 }
 
-.project-wrapper:active .description {
-  opacity: 1;
-  transform: translateY(-50%);
-}
-
-.project-wrapper:active .project-image {
-  transform: scale(1.06);
-  filter: blur(5px);
-}
-
-.project-wrapper:active .project-background {
-  opacity: 0.8;
-}
-
 .row1,
 .row2 {
   display: flex;
