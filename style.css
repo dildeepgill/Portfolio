@@ -276,7 +276,7 @@ header {
 .cursor {
   cursor: pointer;
   padding-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 57px;
 }
 
 .fa-angle-down {
@@ -481,6 +481,20 @@ button {
 }
 
 .project-wrapper:hover .project-background {
+  opacity: 0.8;
+}
+
+.project-wrapper:active .description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.project-wrapper:active .project-image {
+  transform: scale(1.06);
+  filter: blur(5px);
+}
+
+.project-wrapper:active .project-background {
   opacity: 0.8;
 }
 
@@ -940,5 +954,8 @@ body {
   }
   .fa-angle-down {
     animation: down1 2s ease-in-out infinite;
+  }
+  .project-title {
+    font-size: 32px;
   }
 }
