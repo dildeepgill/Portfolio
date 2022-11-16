@@ -750,12 +750,6 @@ label {
   visibility: visible;
 }
 
-body {
-  /* opacity: 1;
-  visibility: visible;
-  transition: 2s all ease; */
-}
-
 .light {
   color: black;
   background-color: white;
@@ -927,6 +921,13 @@ body {
 
   .description-title {
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+  }
+  .live-links {
+    padding: 0;
+    line-height: 2;
   }
   .moving-images {
     display: none;
