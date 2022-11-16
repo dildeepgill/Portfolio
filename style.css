@@ -491,6 +491,7 @@ button {
 .row2 {
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .row1 {
@@ -816,9 +817,6 @@ label {
     font-size: 30px;
     margin-bottom: 15px;
   }
-  .description {
-    left: 15%;
-  }
 
   .about-project {
     font-size: 23px;
@@ -924,6 +922,8 @@ label {
     margin: 0;
     padding: 0;
     line-height: 2;
+    left: 0;
+    width: 100%;
   }
   .live-links {
     padding: 0;
