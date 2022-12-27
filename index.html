@@ -4,283 +4,432 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚽Dildeep Gill </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dildeep Gill⚽</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/3ac14fc81f.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
-<script type="text/javascript">
-   (function(){
-      emailjs.init("BXG7G7ynHt0ghIQFn");
-   })();
-</script>
+    </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
 
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("BXG7G7ynHt0ghIQFn");
+        })();
+    </script>
 </head>
 <body>
-
-    <header class="main-page" onmousemove="moveBackground(event)">
-        <nav class="wrapper">
-            <figure>
-                <a href="/"><div class="logo"aria-label="logo" >&lt;Dil/&gt</div></a>
-        </figure>
-            <ul class="links-container">
-                <li onclick="toggle()" class="links">
-                    <a href="#" class="nav-link nav-hover gone link-hover" aria-label="message">About Me</a>
+    <!-- LANDING PAGE -->
+    <section id="landing__page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure id="personal-logo>">
+                &lt;Dil/&gt
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggle()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    About
+                    </a>
                 </li>
-                <li class="links">
-                    <a href="#my-projects" class="nav-link nav-hover link-hover" aria-label="projects">Projects</a>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    Projects
+                    </a>
                 </li>
-                <li onclick="toggle()" class="links">
-                    <a href="#" class="nav-link nav-hover link-hover" aria-label="message">Contact</a>
+                <li class="nav__link" onclick="toggle()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    Contact
+                    </a>
                 </li>
-                <li class="links">
-                    <a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume" class="nav-link nav-hover gone link-hover">Resume</a>
+                <li class="nav__link click">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">
+                    <i class="fas fa-adjust" onclick="darkMode()"></i>
+                    </a>
                 </li>
-                <!-- <li class="links" onclick="contrast()">
-                    <a href="#" class="nav-link nav-hover link-hover">
-                        <i class="fa-solid fa-moon bigger"></i></a>
-                </li> -->
             </ul>
         </nav>
-        <div class="heading-background">
-            <div class="heading-container">
-                <div>
-                    <h1>Hi, my <br> name is<b class="purple"> Dil.</b></h1>
-                    <p><b>Front-end web developer.</b></p>
-                    <div class="social-container">
-                        <a href="https://github.com/dildeepgill" aria-label="github" target="_blank" class="font-links ">
-                            <i class="fa-brands fa-github bigger"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" aria-label="linkedin" target="_blank" class="font-links ">
-                            <i class="fa-brands fa-linkedin-in bigger"></i>
-                        </a>
-                        <a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume" class="font-links ">
-                            <i class="fa-solid fa-file bigger"></i>
-                        </a>
-                       
-                        <h2 class="cursor">More <span class="purple" onclick="toggle()">about me</span></h2>    
+        <header class="header">
+            <div class="header__content">
+                <div class="header__img--wrapper-small">
+                    <figure class="personal__img--mask-small">
+                      <img src="./assets/dildeep-gill2.png" class="personal__img" alt="">
+                   </figure>
+                </div>
+                <h1 class="title">Hey</h1>
+                <h1 class="title myColor">I'm Dil.</h1>
+                <div class="header__half">
+                    <p class="header__para">
+                        Aspiring <span class="myColor">Frontend Web Developer</span> 
+                        Have a look at my GitHub, LinkedIn, and Resume!
+                        <br>
+                        Here's a bit more <b class="myColor click" onclick="toggle()">about me.</b>
+                    </p>
+                    <div class="header__img--wrapper">
+                        <figure class="personal__img--mask">
+                            <img src="./assets/dildeep-gill2.png" class="personal__img" alt="">
+                        </figure>
                     </div>
                 </div>
-                <a href="#my-projects" aria-label="projects">    
-                    <i class="fa-solid fa-angle-down"></i>
-                </a>
-            <div class="moving-images">    
-              <img src="./assets/flomar-Football-soccer.png" class="shape shape0" style="width: 30px"alt="soccer ball">            
-              <i class="fa-sharp fa-solid fa-code grey shape shape1"></i> 
-              <img src="./assets/luffy.png" class="shape shape2" style="width: 40px"alt="luffy">  
-              <i class="fa-sharp fa-solid fa-code  grey shape shape3"></i> 
-              <img src="./assets/btc.png" class="shape shape4" style="width: 45px"alt="bitcoin">   
-              <i class="fa-sharp fa-solid fa-code  grey shape shape5"></i> 
-              <img src="./assets/pizza2.png" class="shape shape6" style="width: 40px"alt="pizza slice">  
-              <i class="fa-sharp fa-solid fa-code grey shape shape7"></i> 
-              <img src="./assets/league.png" class="shape shape8" style="width: 30px"alt="league of legends icon">   
-               
-            </div>
-       </div>
-       <div class="modal">
-            <div class="modal-one about-modal">
-                <div class="modal-container">
-                    <div class="para-wrapper"><h3 class="about-me" >About me</h3>
-                    
-                    <p class="modal-title">Hello! My name is Dildeep Gill and I am a front-end developer who is a recent graduate from an immersive web dev bootcamp from Juno College of Technology. I made a transition into web development from a career as a supervisor and a bank clerk. With my diverse experience I have learned to thrive in a team environment and improve client experience. I consider myself a lifelong learner and always improving my skills in JavaScript and React. When I am not coding you can find me playing soccer, watching anime and playing league of legends.</p>
-                </div>             
-                    
-                    <ul class="modal-images">
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                            <span class="language">React</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <span class="language">Javascript</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <span class="language">Css</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <span class="language">Html</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /> 
-                            <span class="language">Git</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-                            <span class="language">FireBase</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                            <span class="language">Sass</span>
-                        </li>
-                        <li class="skills">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-                            <span class="language">JQuery</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modal-one contact-modal">
-                  <i onclick="toggle()" class="fas fa-times close bigger"></i>              
-
-                <div class="modal-container">
-                <h3 class="modal-title modal-title-contact">
-                    Love to hear from you
-                </h3>
-                
-                <form id="contact-form" onsubmit="contact(event)">
-                <div class="fields">
-                    <label class="form-name" for="name">Name</label>
-                    <input type="text" name="user-name" required >
-                </div>
-                <div class="fields">
-                    <label class="form-name" for="email">Email</label>
-                    <input type="email" name="user-email" required>
-                </div>
-                <div class="fields">
-                    <label class="form-name" for="message">Message</label>
-                    <textarea type="input" name="message" required ></textarea>
-                </div>
-                <button id=contact-submit aria-label="Send"class="form-submit">Send </button>
-                </form>
-            </div>
-            <div class="modal-loading">
-                <i class="fas fa-spinner"></i>
-            </div>
-            <div class="modal-sent">
-                Thanks message has been sent! Will reach out soon. 
-            </div>
-            </div>
-           
-        </div>     
-    </header>
-   
-    <a href="#" aria-label="homepage">
-        <button class="contactme" aria-label="message-image" onclick="toggle()">
-            <i class="fas fa-envelope bigger"></i>
-        </button>
-    </a>
-        <section class="all-projects">
-            <div class="container">
-                <h2 class="project-title" id="my-projects">My <b class="purple">Projects</b></h2>
-               <ul class="list-myprojects">
-                <div class="row1">
-                    <li class="project">
-                    <div class="project-wrapper">
-                        <img src="./assets/project4F.png" class="project-image" alt="project4">  
-                        <div class="project-background"></div>               
-                        <div class="description">
-                                <h3 class="description-title">
-                                    Tremors <br> Html, CSS, React, API, Firebase
-                                </h3>
-                                <div class="about-project">
-                                    Developed a front-end web app using react leaflet and USGS APIs to plot
-                                    earthquakes on a vector map, assign heroes, and log vacation days to Firebase
-                                </div>                       
-                                <div class="live-links">
-                                    <a href="https://github.com/shaishav007/tremorsV1"  aria-label="github" target="_blank" class="first-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://beamish-stardust-41358a.netlify.app/" aria-label="livelink" target="_blank" class="first-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    
-                        </div>
-                    </div> 
-                    </div>
-                    </li>
-                    <li class="project">
-                        <div class="project-wrapper">
-                            <img src="./assets/Dilsgame1.png" class="project-image" alt="project about bitcoin">  
-                            <div class="project-background"></div>               
-                            <div class="description">
-                                    <h3 class="description-title">
-                                        Dil's Game Shop <br> Html, CSS, Javascript, REST API
-                                    </h3>
-                                    <div class="about-project">
-                                        Dil's Game Shop is a e-commerce website where you can find amazing games. Users are able to sort games by rating/price and add/remove items to their cart.  
-
-                                    </div>        
-                                    <div class="live-links">
-                                        <a href="https://github.com/dildeepgill/Project-3" aria-label="github" target="_blank" class="first-link">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                        <a href="https://dilsgameshop.netlify.app" target="_blank"  aria-label="live link" class="first-link">
-                                            <i class="fas fa-link"></i>
-                                        </a>
-                                    </div>
-                                    
-                            </div>       
-                        </div>
-                    </li>
-                </div>
-                <div class="row2">
-                    <li class="project">
-                        <div class="project-wrapper">
-                        <img src="./assets/HIREMMMEE6.png" class="project-image" alt="project about beach">  
-                        <div class="project-background"></div>               
-                        <div class="description">
-                                <h3 class="description-title">
-                                    Hire me Coin <br> Html, CSS, Javascript, SASS, REST API
-                                </h3>
-                                <div class="about-project">
-                                    A pair-programmed application that allows users to search for the top 20 cryptocurrencies while displaying price chart.                                             
-
-                                </div>
-                                <div class="live-links">
-                                    <a href="https://github.com/kwametsunami/Crypto-App" aria-label="github" class="first-link" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://hiremecoin.netlify.app/" aria-label="livelink" class="first-link" target="_blank">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                    
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project-wrapper">
-                            <img src="./assets/BEACHHHH6.png" class="project-image" alt="project about beach">  
-                            <div class="project-background"></div>               
-                            <div class="description">
-                                    <h3 class="description-title">
-                                        BeachStays <br> Html, CSS
-                                    </h3>
-                                    <div class="about-project">
-                                        A conversion of a PSD design into a multi-page and responsive website, following a provided style guide and file-naming conventions.
-                                    </div>
-                                    <div class="live-links">
-                                        <a href="https://github.com/dildeepgill/Project-1" aria-label="github" class="first-link" target="_blank">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                        <a href="https://beachstaysjuno.netlify.app" class="first-link" aria-label="livelink" target="_blank">
-                                            <i class="fas fa-link"></i>
-                                        </a>
-                                    </div>   
-                            </div>                     
-                    </li>
-                </div>
-               </ul>
-            </div>
-            
-            <footer class="container">
-                <a href="#" aria-label="projects">    
-                        <i class="fa-solid  fa-angle-down up"></i>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" target="_blank" class="social__link click">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                <ul class="footer-links">
-                    
-                    <li ><a href="#"onclick="toggle()" aria-label="messageEmail">Contact</a></li>
-                    <li><a href="https://github.com/dildeepgill" aria-label="github" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" aria-label="linkedin" target="_blank">Linkedin</a></li>
-                    <li><a href="./assets/Dildeeps Resume.pdf" target="_blank" aria-label="resume">Resume</a></li>
+                    <a href="https://github.com/dildeepgill" target="_blank" class="social__link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./assets/Dildeeps Resume.pdf" target="_blank" class="social__link click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggle(); remove()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">
+                    Here's a bit about me.
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--about">
+                    Aspiring Frontend Web Developer.
+                </h4>
+                <p class="modal__para">
+                    Aiming to leverage proven communication, planning, problem-solving, and teamwork skills to successfully fill the open position at your company. 
+                    <br>
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
+                        <span class="language__name"><b>React</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+                        <span class="language__name"><b>JavaScript</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+                        <span class="language__name"><b>Css</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+                        <span class="language__name"><b>Html</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+                        <span class="language__name"><b>Git</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt=""/> 
+                        <span class="language__name"><b>Firebase</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="">
+                        <span class="language__name"><b>Sass</b></span>    
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="">
+                        <span class="language__name"><b>JQuery</b></span>    
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggle(); remove()"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm current open to new opportunities!
+                </h3>
+                <form id="contact__form" onsubmit="email(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way!
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon!
+                </div>
+            </div>
+        </div>
+        <img src="./assets/luffy.png" class="shape shape--0" style="width: 60px">
+        <img src="./assets/pizza2.png" class="shape shape--1" style="width: 60px">
+        <img src="./assets/league.png" class="shape shape--2"style="width: 55px">
+        <img src="./assets/ball.png" class="shape shape--3" style="width: 60px">
+        <img src="" class="shape shape--4">
+        <img src="./assets/btc.png" class="shape shape--5" style="width: 60px">
+        <img src="./assets/vegeta.png" class="shape shape--6" style="width: 60px">
+        <img src="./assets/travel.png" class="shape shape--7" style="width: 80px">
+        <img src="./assets/messi.png" class="shape shape--8" style="width: 80px">
+    </section>
+
+    <!-- PROJECTS PAGE -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="myColor">projects.</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                       
+                        <div class="project__wrapper">
+                            <img src="./assets/ultraverse.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    ULTRAVERSE
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    ReactJS, API-integration, Pagination, skeleton loading states                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            Transformed a completely static HTML, CSS, JavaScript and React single page application into an interactive user interface using animations, transitions and carousels in a collaborative team environment. 
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/dildeep-internship" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://nftmarketplacecrypto.netlify.app" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="project__wrapper">
+                            <img src="./assets/Tremors.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    TREMORS
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, React, API, Firebase
+                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            Developed a front-end web app using react leaflet and USGS APIs to plot
+                                            earthquakes on a vector map, assign heroes, and log vacation days to Firebase
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/tremorsV1" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://beamish-stardust-41358a.netlify.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project__wrapper">
+                            <img src="./assets/gameshop.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    DIL'S GAME SHOP
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, Javascript, REST API
+                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            Dil's Game Shop is a e-commerce website where you can find amazing games. Users are able to sort games by rating/price and add/remove items to their cart.    </li>                                      
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/Project-3" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://dilsgameshop.netlify.app" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="project__wrapper">
+                            <img src="./assets/Sleek.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    SLEEK
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, Javascript, React, Firebase, Firestore
+                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            A social media app made using React and firebase. Able to post images/emojis and text. 
+                                        </li>
+                                        
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/Sleek" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://social-media24.netlify.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="project__wrapper">
+                            <img src="./assets/Hireme.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    HIRE ME COIN
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, Javascript, SASS, REST API
+                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            A pair-programmed application that allows users to search for the top 20 cryptocurrencies while displaying price chart.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/Crypto-App" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://hiremecoin.netlify.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project__wrapper">
+                            <img src="./assets/beachstays.PNG" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    BEACHSTAYS
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, Javascript
+                                </h4>
+                                <p class="project__description--para">
+                                    <ul class="bullet__info">
+                                        <li class="bullet">
+                                            A conversion of a PSD design into a multi-page and responsive website, following a provided style guide and file-naming conventions.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/dildeepgill/Project-1" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://beachstaysjuno.netlify.app" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                     
+
+                       
+                        
+
+                        
+                    </li>
                 </ul>
-                © Dildeep Gill 2022
-            </footer>
-            
-            
-        </section>
-    <script src="app.js"></script>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <a href="#" class="footer__anchor">
+                    <figure class="footer__logo">
+                        <img src="./assets/messi.png" class="footer__logo--img" alt="">
+                    </figure>
+                    <span class="footer__logo--popper">
+                        Top
+                        <i class="fas fa-arrow-up"></i>
+                    </span>
+                </a>
+                <div class="footer__social--list">
+                    <a href="https://www.linkedin.com/in/dildeep-gill-74436214a/" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    LinkedIn
+                    </a>
+                    <a href="https://github.com/dildeepgill" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    Github
+                    </a>
+                    <a href="#" onclick="toggle()" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    Contact
+                    </a>
+                    <a href="./assets/Dildeeps Resume.pdf" target="_blank" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    Copyright &copy; 2022 Dildeep Gill
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
