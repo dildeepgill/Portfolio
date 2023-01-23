@@ -165,8 +165,8 @@ nav,
 }
 
 .dark-theme #personal-logo {
-  font-size: 20;
-  color: white;
+  font-size: 20 !important;
+  color: white !important;
 }
 
 .dark-theme .scroll__icon {
